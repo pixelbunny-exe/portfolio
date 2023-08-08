@@ -19,22 +19,22 @@
             </ul>
         </header>
         <section>
-            <img src="stars.png" id="stars">
-            <img src="cloud_back.png" id="cback">
-            <img src="bunny.png" id="bunny">
-            <img src="clouds_front.png" id="cfront">
+            <img src="imgs/stars.png" id="stars">
+            <img src="imgs/cloud_back.png" id="cback">
+            <img src="imgs/bunny.png" id="bunny">
+            <img src="imgs/clouds_front.png" id="cfront">
         </section>
         <div id="content">
 
             <div id="about" class="about">
                 <div id="aboutmetext">
-                    <h2> ABOUT ME. </h2>
+                    <h2> .ABOUT </h2>
                     <p>Hi!!! My name is <b>Augustina</b> and I'm a Graphic Designer and beginner front-end software developer learning HTML, CSS, and Javascript! </p>
                     <p>I love designing and making visually appealing websites! This portfolio is full of the work I did when learning (and a few extras :3) </p>
                     <p><b>Thank you!!</b></p>
                 </div>
                 <div id="aboutmeimg">
-                    <img src="about_me.png" id="aboutimg" alt="drawing of me technically">
+                    <img src="imgs/about_me.png" id="aboutimg" alt="drawing of me technically">
 
                 </div>
 
@@ -43,22 +43,22 @@
             <br>
             <br>
             <div id="work" class="work">
-                <h2> MY WORK. </h2>
+                <h2> .WORK </h2>
                 <div id="links">
                     <div class="button">
                         <a href="https://github.com/pixelbunny-exe">
-                        <i class="fab fa-github"></i></a>
-                        <span>GitHub</span>
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span></a>
                     </div>
                     <div class="button">
                         <a href="https://www.linkedin.com/in/augustina-ugbaja-a7b79b18b/">
-                        <i class="fa-brands fa-linkedin"></i></a>
-                        <span>Linkedin</span>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>Linkedin</span></a>
                     </div>
                     <div class="button">
                         <a href="https://twitter.com/PixelBunnie_exe">
-                        <i class="fa-brands fa-twitter"></i></a>
-                        <span>Twitter</span>
+                        <i class="fa-brands fa-twitter"></i>
+                        <span>Twitter</span></a>
                     </div>
                 
                 
@@ -68,70 +68,96 @@
                     <div class="gallery">
                         <div class="image">
                             <a href="#">
-                                <img src="coming_soon.png" alt="Image 1">
+                                <img src="imgs/coming_soon.png" alt="Image 1">
                             </a>
                         </div>
                         <div class="image">
                             <a href="#">
-                                <img src="coming_soon.png" alt="Image 2">
+                                <img src="imgs/coming_soon.png" alt="Image 2">
                             </a>
                         </div>
                         <div class="image">
                             <a href="#">
-                                <img src="coming_soon.png" alt="Image 3">
+                                <img src="imgs/coming_soon.png" alt="Image 3">
                             </a>
                         </div>
                         <div class="image">
                             <a href="#">
-                                <img src="coming_soon.png" alt="Image 4">
+                                <img src="imgs/coming_soon.png" alt="Image 4">
                             </a>
                         </div>
                         <div class="image">
                             <a href="#">
-                                <img src="coming_soon.png" alt="Image 5">
+                                <img src="imgs/coming_soon.png" alt="Image 5">
                             </a>
                         </div>
                         <div class="image">
                             <a href="#">
-                                <img src="coming_soon.png" alt="Image 6">
+                                <img src="imgs/coming_soon.png" alt="Image 6">
                             </a>
                         </div>
                     </div>
+                </div>
             </div>
 
             <br>
             <br>
             
             <div id="contact" class="contact">
-                <h2> CONTACT ME. </h2>
                 
-                <p> W.I.P. :3</p>
+                <div id="contactinfo">
+                    <h2> .CONTACT </h2>
+                    <p> Feel free to contact me! I'll try to get back to you as soon as possible! </p>
+                
+                    <i class=""></i>
+                    <ul>
+                        <li><a href="#contact"><i class="fa-solid fa-envelope"></i>Augbajadesign@gmail.com</a></li>
+                        <li><a href="https://twitter.com/PixelBunnie_exe"><i class="fa-brands fa-twitter"></i>PixelBunny.exe</a></li>
+                    </ul>
+                </div>
+                <div id="contactform">
+                    <form>
+                        <label for="name"> <i class="fa-regular fa-user"></i>Name</label>  
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                  
+                        <label for="email"> <i class="fa-regular fa-envelope"></i>Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                  
+                        <label for="message"> <i class="fa-regular fa-comment"></i>Message</label>
+                        <textarea id="message" name="message" placeholder="Your message here!" rows="5" required></textarea>
+                  
+                        <button type="submit">Send</button>
+                      </form>
+
+
+                </div>
 
             </div>
         </div>
+
         <footer>
-            Footer goes here, and it is also a BIG W.I.P. <br>
-            (does this count as a requirement done >.>)
+            <img src="imgs/AU logo-W.png" alt="Augustina Ugbaja Logo">
+            <p>© 2023, Augustina Ugbaja</p>
 
         </footer>
 
-        <script>
-            let stars = document.getElementById('stars');
-            let cback = document.getElementById('cback');
-            let bunny = document.getElementById('bunny');
-            let cfront = document.getElementById('cfront');
-            let header = document.querySelector('header')
-
-            window.addEventListener('scroll', function(){ 
-                let value = window.scrollY;
-                stars.style.right = value * .45 + 'px';
-                cback.style.top = value * 0.25 + 'px';
-                bunny.style.top = value * 0.15 + 'px';
-                stars.style.top = value * 0.45 + 'px';
-                header.style.top = value * 0.5 + 'px';
-            })
-        </script>
-
-
     </body>
+    
+
+    <script>
+        let stars = document.getElementById('stars');
+        let cback = document.getElementById('cback');
+        let bunny = document.getElementById('bunny');
+        let cfront = document.getElementById('cfront');
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function(){ 
+            let value = window.scrollY;
+            stars.style.right = value * .45 + 'px';
+            cback.style.top = value * 0.25 + 'px';
+            bunny.style.top = value * 0.15 + 'px';
+            stars.style.top = value * 0.45 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
 </html>
