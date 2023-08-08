@@ -1,0 +1,206 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fa437d;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #66102e
+}
+
+p, h1, h2, h3 {
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+h2 {
+    font-size: 3em;
+    color:#fa437d;
+    text-align: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; 
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+header ul li a:hover,
+header ul li a.active { 
+    background: #fff;
+    color: #fa437d;
+}
+
+header i{
+    margin-right: 10px;
+}
+header ul li a:hover {
+    background-color: #fff;
+    color: #fa437d;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 125vh;
+    padding: 100px;
+    overflow: hidden; /* Add this to hide any overflow content */
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #fff, transparent);
+    z-index: 1000;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: auto;
+}
+
+section img #cfront{
+    z-index: 10;
+
+}
+
+#content{
+    position: relative;
+    display: grid;
+    justify-items: center;
+    padding: 100px;
+    background: #fff;
+
+}
+
+#about{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+#aboutmetext{
+    flex: 1;
+    padding: 20px;
+    max-width: 400px;
+}
+
+#aboutimg{
+    width: 80%;
+    max-width: 500px;
+    min-width: 200px;
+    border-radius: 8px;
+}
+
+.work .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 20px;
+    min-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style each image container */
+.work .image {
+    width: 250px; /* Adjust the width as needed */
+    margin: 10px;
+    border-radius: 20px;
+
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.work .image:hover {
+    transform: scale(1.05);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(102, 16, 46, 0.3);
+}
+
+/* Style the image within each container */
+.work .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+}
+
+#links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fa437d;
+    color: white;
+    padding: 6px 15px;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.button i {
+    margin-right: 10px;
+    color:#fff;
+}
+
+.button:hover {
+    background-color: #ff4db6;
+    transform: scale(1.05);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
